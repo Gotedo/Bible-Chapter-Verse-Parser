@@ -1,3 +1,3 @@
-module github.com/gotedo/bible-verse-parser
+module github.com/gotedo/bible-chapter-verse-parser
 
 go 1.20

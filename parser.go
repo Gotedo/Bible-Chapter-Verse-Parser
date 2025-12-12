@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	"github.com/gotedo/bible-verse-parser/data"
+	"github.com/gotedo/bible-chapter-verse-parser/data"
 )
 
 var defaultSeparators = []string{"&", ",", ";", "and"}

@@ -1,8 +1,6 @@
-# Gotedo Bible Verse Parser
+# Gotedo Bible Chapter Verse (BCV) Parser
 
-This repository contains a Go port of the TechWilk Bible Verse Parser. The original project was in PHP; this repository provides a functionally equivalent parser implemented in Go with translated tests. The core parser lives in the `parser` package and uses a generated static Bible structure in `data/static_bible_structure.go`.
-
-Table of contents
+## Table of contents
 
 - Features
 - Quick start
@@ -124,12 +122,6 @@ Developer checklist
 - Run `go test ./... -v`.
 - Run `go vet ./...`.
 - Optionally run `golangci-lint run` (CI tries to run it if present).
-
-## LICENSE
-
-This port keeps the repository's original license (see `LICENCE.md`).
-
-If you'd like, I can expand any section (more examples, package docs, or a small example app). Also happy to open a PR with further documentation or CI refinements.
 
 ## CREDIT
 
