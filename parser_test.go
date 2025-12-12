@@ -3,7 +3,7 @@ package parser_test
 import (
 	"testing"
 
-	"github.com/gotedo/bible-chapter-verse-parser/parser"
+	parser "github.com/gotedo/bible-chapter-verse-parser"
 )
 
 func TestParseSimple(t *testing.T) {
