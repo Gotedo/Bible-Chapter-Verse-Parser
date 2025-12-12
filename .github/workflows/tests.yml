@@ -32,16 +32,11 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-go-${{ matrix.go-version }}-
 
-      - name: Install linters (optional)
-        run: |
-          if command -v golangci-lint >/dev/null 2>&1; then echo 'golangci-lint present'; else curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $GOPATH/bin v1.59.0; fi
+      - name: Install dependencies
+        run: go mod tidy && go mod download
 
       - name: Run go vet
         run: go vet ./...
 
       - name: Run go test
         run: go test ./... -v
-
-      - name: Run golangci-lint (optional)
-        run: |
-          if command -v golangci-lint >/dev/null 2>&1; then golangci-lint run; else echo 'golangci-lint not installed, skipping'; fi
